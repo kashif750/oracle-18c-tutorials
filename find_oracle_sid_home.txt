@@ -1,0 +1,17 @@
+** find out the oracle_sid & oracle_home **
+
+window + R 
+    --> REGEDIT
+        --> HKEY_LOCAL_MACHINE
+            --> SOFTWARE (list of softwares installed in your computer)
+                --> ORACLE
+                    --> KEY_OraDB18Home1 (oracle name here: i'm using 18c )
+                        --> oracle_sid
+                        --> oracle_home
+
+
+
+
+localhost(c)/DB_HOME/network/admin/tnsnames.ora
+
+C:/app/kk/product/18.0.0/dbhomeXE/network/admin/listener.ora

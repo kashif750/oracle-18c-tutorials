@@ -1,0 +1,19 @@
+** unlock HR schema **
+** alter unlock connect and run commands **
+** source : how to unlock HR schema in Oracle Database 18x XE Express Edition/ configure in oracle sql developer by techStudio82 **
+
+1: open sqlplus on windows
+
+2: enter username:  / as sysdba;
+
+3: SQL>
+    show user;
+    select name from v$pdbs;
+    alter pluggable database all open;
+    alter pluggable database all save state;
+    show user;
+    connect sys/oracle@localhost:1521/XEPDB1 as sysdba;
+    alter user hr identified by hr;
+    alter user hr account unlock;
+    connect hr/hr@localhost:1521/XEPDB1;
+    select * from departments;

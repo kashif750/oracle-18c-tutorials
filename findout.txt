@@ -1,0 +1,18 @@
+1: pluggable database vs container database
+2: normalization sql
+3: hr
+    --> tables
+    --> views
+    --> indexes
+    --> packages
+    --> procedures
+    --> functions
+    --> operators
+    --> queues
+    --> triggers
+    --> types
+    --> sequences
+    --> synmyms
+    --> recycle bin
+
+4: 
